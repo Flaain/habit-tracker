@@ -1,0 +1,35 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.content__header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.content__btn-add {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    color: #5051F9;
+    border: none;
+    padding: 15px 30px;
+    background-color: #EDECFE;
+    border-radius: 8px;
+    box-shadow: none;
+    transition: background-color .2s linear;
+    cursor: pointer;
+}
+
+@media (any-hover: hover) {
+    .content__btn-add:hover {
+        background-color: #d6d5e6;
+        border: none;
+    }
+}

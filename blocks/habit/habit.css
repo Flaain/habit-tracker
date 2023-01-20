@@ -1,0 +1,113 @@
+.habit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    padding: 0 10px 0 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.habit__text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.habit__day {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 40px;
+    line-height: 16px;
+    border-right: 1px solid #E7EBFB;
+    color: #000000;
+}
+
+.habit__comment {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #23235F;
+}
+
+.habit__delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.habit__btn-icon_type_delete path {
+    transition: stroke .2s linear;
+}
+
+.habit__form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.habit__input {
+    padding: 12px 40px 12px 50px;
+    border: 1px #E7EBFB solid;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 9px;
+    width: 100%;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8899A8;
+    transition: all .2s linear;
+}
+
+.habit__input:focus {
+    background-color: #e6e8f0;
+}
+
+.habit__input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8899A8;
+}
+
+.habit__form::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    z-index: 9;
+    background-image: url(../../img/message.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (any-hover: hover) {
+    .habit__delete-btn:hover {
+        background-color: tomato;
+    }
+    .habit__delete-btn:hover .habit__btn-icon_type_delete path {
+        stroke: #FFF;
+    }
+}

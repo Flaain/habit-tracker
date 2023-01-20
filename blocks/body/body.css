@@ -1,0 +1,9 @@
+.body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F6FD;
+    display: flex;
+    gap: 45px;
+    max-width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}

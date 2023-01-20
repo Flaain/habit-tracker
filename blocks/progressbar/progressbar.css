@@ -1,0 +1,43 @@
+.progressbar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 235px;
+}
+
+.progressbar__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressbar__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color: #232360;
+}
+
+.progressbar__percent {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+    color: #768396;
+}
+
+.progressbar__status {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #E6E9ED;
+    border-radius: 4px;
+}
+
+.progressbar__coverbar {
+    position: absolute;
+    width: 80%;
+    height: inherit;
+    background-color: #5051F9;
+    border-radius: inherit;
+}

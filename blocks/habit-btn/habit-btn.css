@@ -1,0 +1,45 @@
+.habit-btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0px 8px 14px rgba(62, 107, 224, 0.12);
+    cursor: pointer;
+    margin: 0;
+    transition: all .2s linear;
+}
+
+.habit-btn_state_active {
+    background-color: #5051F9;
+}
+
+.habit-btn_type_add {
+    border: 1px #CAD5FF solid;
+}
+
+.habit-btn__icon_type_add {
+    fill: none;
+}
+
+.habit-btn__icon_type_add path{
+    stroke: #CAD5FF;
+    transition: all .2s linear;
+}
+
+@media (any-hover: hover) {
+    .habit-btn:hover {
+        box-shadow: 0px 0px 14px rgba(62, 107, 224, 0.12);
+    }
+    .habit-btn_state_active:hover {
+        background-color: #6A6AFB;
+    }
+    .habit-btn_type_add:hover {
+        border: 1px #5051F9 solid;
+    }
+    .habit-btn_type_add:hover .habit-btn__icon_type_add path{
+        stroke: #5051F9;
+    }
+}
